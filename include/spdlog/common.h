@@ -48,7 +48,7 @@
 #endif  // #ifdef SPDLOG_COMPILED_LIB
 
 #include <spdlog/fmt/fmt.h>
-
+#include <spdlog/fmt/xchar.h>
 #if !defined(SPDLOG_USE_STD_FORMAT) && \
     FMT_VERSION >= 80000  // backward compatibility with fmt versions older than 8
     #define SPDLOG_FMT_RUNTIME(format_string) fmt::runtime(format_string)
